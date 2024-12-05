@@ -43,7 +43,7 @@ const Hero = () => {
                 onClick={() => {
                   const link = document.createElement('a');
                   link.href = resumeLink;
-                  link.download = 'mukeshyadav-frontend-dev-resume';
+                  link.download = resumeLink.split('/').pop();
                   link.click();
                 }}
                 className="rounded-l-md bg-brandDark-800 px-6 py-2 space-x-2 shadow-md hover:bg-brandBlue-500">
