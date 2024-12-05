@@ -6,8 +6,8 @@ import profilePic from '../assets/images/mukesh-yadav-pr-pic.webp';
 
 const Hero = () => {
 
-  const resumePdfbl = '../assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf';
-  const resumePdfbw = '../assets/resume/mukeshyadav-frontend-dev-resume-bw.pdf';
+  const resumePdfbl = '/src/assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf';
+  const resumePdfbw = '/src/assets/resume/mukeshyadav-frontend-dev-resume-bw.pdf';
 
   const [resumeLink, setResumeLink] = useState(resumePdfbl);
 
@@ -39,7 +39,7 @@ const Hero = () => {
             <NavLink to="/contact" className="rounded-md bg-gradient-to-r from-brandBlue-500 to-brandBlue-600 hover:bg-brandBlue-600 active:bg-brandBlue-400 px-6 py-2 shadow-sm">Contact</NavLink>
 
             <div className="flex items-center rounded-md dark:border dark:border-brandDark-700">
-              <NavLink id="download-link" to="#"
+              <NavLink id="download-link"
                 onClick={() => {
                   const link = document.createElement('a');
                   link.href = resumeLink;
@@ -78,15 +78,15 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-brandBlue-500 via-purple-500 to-brandBlue-600 rounded-full blur-3xl opacity-20 dark:opacity-40 animate-gradient-x"></div>
             <div className="relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-brandBlue-500 via-pink-500 to-brandBlue-600 rounded-full animate-spin animate-gradient-xy"></div>
-              <div className="relative bg-white dark:bg-brandDark-950 rounded-full p-1">
+              <div className="relative bg-white dark:bg-brandDark-950 rounded-full p-1.5">
                 <img
                   src={profilePic}
                   alt="Profile"
-                  className="max-h-64 rounded-full transform hover:scale-105 transition-transform duration-300"
+                  className="max-h-64 rounded-full transform hover:scale-105 hover:rotate-12 transition-transform duration-500"
                 />
               </div>
             </div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 rounded-full blur-3xl opacity-10 dark:opacity-30 animate-pulse animate-gradient-y"></div>
+            <div className="absolute bg-gradient-to-tr from-blue-500 via-pink-500 to-pink-500 rounded-full blur-3xl opacity-10 dark:opacity-30 animate-spin animate-gradient-y"></div>
           </div>
         </div>
         {/* Profile Image End */}
