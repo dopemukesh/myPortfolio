@@ -20,7 +20,7 @@ const Projects = () => {
       title: "Modern Portfolio",
       description: "Personal portfolio website built with React and Tailwind CSS",
       category: "web",
-      image: "myPortfolio/src/assets/images/projectImage/technosavvys-web.png",
+      image: "src/assets/images/projectImage/technosavvys-web.png",
       link: "https://www.mukeshyadav.info"
     },
     {
@@ -28,7 +28,7 @@ const Projects = () => {
       title: "Ormat Todolist Web App",
       description: "Full-stack Todolist Web App with React, Tailwind CSS, Node.js and MongoDB",
       category: "web",
-      image: "myPortfolio/src/assets/images/projectImage/todoList.png",
+      image: "src/assets/images/projectImage/todoList.png",
       link: "https://todo-list-seven-bay-50.vercel.app/"
     },
     {
