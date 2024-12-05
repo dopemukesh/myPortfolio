@@ -4,7 +4,7 @@
       "items": [
         {
           "name": "HTML",
-          "icon": "/src/assets/logo/frontend/html-logo.svg",
+          "icon": "./assets/logo/frontend/html-logo.svg",
           "uses": "HTML is used to structure web pages"
         },
         {
