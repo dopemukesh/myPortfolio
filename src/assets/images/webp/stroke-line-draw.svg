@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="500" height="50" viewBox="-350 35 1000 20" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 25 Q 60 15, 110 25 T 10 2 Q 0 35, 310 25 T 100 50 Q 600 36, 120 200" 
+        stroke="#0EA5E9" stroke-width="6" fill="none" stroke-linecap="round" />
+</svg>
+
+
