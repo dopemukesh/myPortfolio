@@ -3,12 +3,12 @@
     "id": 1,
     "title": "Web Design",
     "description": "The most modern and high-quality designs made at a professional level.",
-    "icon": "/src/assets/icons/webDesign2-icon.svg"
+    "icon": "src/assets/icons/webDesign2-icon.svg"
   },
   {
     "id": 2,
     "title": "Web Development",
     "description": "High-quality development of sites at the professional level.",
-    "icon": "/src/assets/icons/webdev2-icon.svg"
+    "icon": "src/assets/icons/webdev2-icon.svg"
   }
 ]
