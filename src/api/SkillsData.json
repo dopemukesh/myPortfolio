@@ -4,32 +4,32 @@
       "items": [
         {
           "name": "HTML",
-          "icon": "src/assets/logo/frontend/html-logo.svg",
+          "icon": "/src/assets/logo/frontend/html-logo.svg",
           "uses": "HTML is used to structure web pages"
         },
         {
           "name": "CSS",
-          "icon": "src/assets/logo/frontend/css-logo.svg",
+          "icon": "/src/assets/logo/frontend/css-logo.svg",
           "uses": "CSS is used to style web pages"
         },
         {
           "name": "Tailwind CSS",
-          "icon": "src/assets/logo/frontend/tailwind-logo.svg",
+          "icon": "/src/assets/logo/frontend/tailwind-logo.svg",
           "uses": "Tailwind CSS is a utility-first CSS framework"
         },
         {
           "name": "Bootstrap",
-          "icon": "src/assets/logo/frontend/bootstrap-logo.svg",
+          "icon": "/src/assets/logo/frontend/bootstrap-logo.svg",
           "uses": "Bootstrap is used for responsive design and UI components"
         },
         {
           "name": "JavaScript",
-          "icon": "src/assets/logo/frontend/js-logo.svg",
+          "icon": "/src/assets/logo/frontend/js-logo.svg",
           "uses": "JavaScript is used to add interactivity to web pages"
         },
         {
           "name": "React Js",
-          "icon": "src/assets/logo/frontend/react-logo.svg",
+          "icon": "/src/assets/logo/frontend/react-logo.svg",
           "uses": "React is a library for building interactive user interfaces"
         }
       ]
@@ -39,32 +39,32 @@
       "items": [
         {
           "name": "Figma",
-          "icon": "src/assets/logo/frontend/figma-logo.svg",
+          "icon": "/src/assets/logo/frontend/figma-logo.svg",
           "uses": "Figma is used for UI/UX design and prototyping"
         },
         {
           "name": "Canva",
-          "icon": "src/assets/logo/frontend/canva-logo.svg",
+          "icon": "/src/assets/logo/frontend/canva-logo.svg",
           "uses": "Canva is a tool for creating graphic designs"
         },
         {
           "name": "VS Code",
-          "icon": "src/assets/logo/frontend/vscode-logo.svg",
+          "icon": "/src/assets/logo/frontend/vscode-logo.svg",
           "uses": "VS Code is a code editor for software development"
         },
         {
           "name": "Vercel",
-          "icon": "src/assets/logo/frontend/vercel-light-logo.svg",
+          "icon": "/src/assets/logo/frontend/vercel-light-logo.svg",
           "uses": "Vercel is used for hosting web applications"
         },
         {
           "name": "Github",
-          "icon": "src/assets/logo/frontend/github-light-logo.svg",
+          "icon": "/src/assets/logo/frontend/github-light-logo.svg",
           "uses": "GitHub is used for version control and collaboration"
         },
         {
           "name": "Git",
-          "icon": "src/assets/logo/frontend/git-logo.svg",
+          "icon": "/src/assets/logo/frontend/git-logo.svg",
           "uses": "Git is used for tracking changes in source code"
         }
       ]
@@ -74,17 +74,17 @@
       "items": [
         {
           "name": "Node.js",
-          "icon": "src/assets/logo/backend/nodejs-logo.svg",
+          "icon": "/src/assets/logo/backend/nodejs-logo.svg",
           "uses": "Node.js is used for server-side scripting"
         },
         {
           "name": "Express.js",
-          "icon": "src/assets/logo/backend/expressjs-logo.svg",
+          "icon": "/src/assets/logo/backend/expressjs-logo.svg",
           "uses": "Express.js is a web application framework for Node.js"
         },
         {
           "name": "MongoDB",
-          "icon": "src/assets/logo/backend/mongodb-logo.svg",
+          "icon": "/src/assets/logo/backend/mongodb-logo.svg",
           "uses": "MongoDB is a NoSQL database for storing data"
         }
       ]
