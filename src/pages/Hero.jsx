@@ -36,7 +36,7 @@ const Hero = () => {
             CSS, and JavaScript, and I am constantly learning.
           </p>
           <div className="flex justify-center md:justify-start items-center flex-wrap gap-4 py-4">
-            <NavLink to="/contact" className="rounded-md bg-gradient-to-r from-brandBlue-500 to-brandBlue-600 hover:bg-brandBlue-600 active:bg-brandBlue-400 px-8 py-3 shadow-sm">Contact</NavLink>
+            <NavLink to="/contact" className="rounded-md bg-gradient-to-r from-brandBlue-500 to-brandBlue-600 hover:bg-brandBlue-600 active:bg-brandBlue-400 px-6 py-3 shadow-sm">Contact</NavLink>
 
             <div className="flex items-center rounded-md dark:border dark:border-brandDark-700">
               <NavLink id="download-link"
@@ -46,13 +46,13 @@ const Hero = () => {
                   link.download = resumeLink.split('/').pop();
                   link.click();
                 }}
-                className="rounded-l-md bg-brandDark-800 px-8 py-3 space-x-2 shadow-md hover:bg-brandBlue-500">
+                className="rounded-l-md bg-brandDark-800 px-6 py-3 space-x-2 shadow-md hover:bg-brandBlue-500">
                 Download Resume
               </NavLink>
 
               <button id="dropdown-button" className="relative group">
                 <img src={downArrow} alt="arrow-down"
-                  className="rounded-r-md bg-brandDark-800 px-3 py-3 h-full border-s-2 border-brandDark-700 hover:bg-brandBlue-500" />
+                  className="rounded-r-md bg-brandDark-800 px-2 py-3 h-full border-s-2 border-brandDark-700 hover:bg-brandBlue-500" />
 
                 <div id="resume-colors"
                   className="absolute hidden group-hover:block group-focus:block right-0 top-14 bg-brandDark-800 text-brandDark-100 rounded-md p-1.5 shadow-md space-y-1 border border-brandDark-700">
