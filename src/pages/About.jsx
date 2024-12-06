@@ -54,7 +54,7 @@ const About = () => {
                 </p>
 
                 <a
-                  href="src/assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf"
+                  href="../src/assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-8 py-3 bg-gradient-to-r from-brandBlue-500 to-brandBlue-600 text-white font-medium rounded-lg shadow-lg shadow-brandBlue-500/25 hover:shadow-xl hover:scale-105 transform transition-all duration-300"
@@ -68,7 +68,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-brandBlue-500 to-brandBlue-600 rounded-3xl blur-3xl opacity-20 dark:opacity-40 transform -rotate-6"></div>
                 <img
-                  src="src/assets/images/mukesh-yadav-pr-pic.webp"
+                  src="../src/assets/images/mukesh-yadav-pr-pic.webp"
                   alt="Profile Picture"
                   className="relative rounded-3xl shadow-2xl w-full max-w-md mx-auto transform hover:scale-[1.02] transition-transform duration-300"
                 />
