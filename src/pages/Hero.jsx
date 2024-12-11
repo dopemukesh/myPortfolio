@@ -6,8 +6,8 @@ import profilePic from '../assets/images/mukesh-yadav-pr-pic.webp';
 
 const Hero = () => {
 
-  const resumePdfbl = '/src/assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf';
-  const resumePdfbw = '/src/assets/resume/mukeshyadav-frontend-dev-resume-bw.pdf';
+  const resumePdfbl = '../assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf';
+  const resumePdfbw = '../assets/resume/mukeshyadav-frontend-dev-resume-bw.pdf';
 
   const [resumeLink, setResumeLink] = useState(resumePdfbl);
 
