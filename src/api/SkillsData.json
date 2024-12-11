@@ -4,17 +4,17 @@
       "items": [
         {
           "name": "HTML",
-          "icon": "/src/assets/logo/frontend/html-logo.svg",
+          "icon": "../assets/logo/frontend/html-logo.svg",
           "uses": "HTML is used to structure web pages"
         },
         {
           "name": "CSS",
-          "icon": "/src/assets/logo/frontend/css-logo.svg",
+          "icon": "../assets/logo/frontend/css-logo.svg",
           "uses": "CSS is used to style web pages"
         },
         {
           "name": "Tailwind CSS",
-          "icon": "/src/assets/logo/frontend/tailwind-logo.svg",
+          "icon": "../assets/logo/frontend/tailwind-logo.svg",
           "uses": "Tailwind CSS is a utility-first CSS framework"
         },
         {
