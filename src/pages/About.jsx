@@ -54,7 +54,7 @@ const About = () => {
                 </p>
 
                 <a
-                  href="src/assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf"
+                  href="./resume/mukeshyadav-frontend-dev-resume-bl.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-8 py-3 bg-gradient-to-r from-brandBlue-500 to-brandBlue-600 text-white font-medium rounded-lg shadow-lg shadow-brandBlue-500/25 hover:shadow-xl hover:scale-105 transform transition-all duration-300"

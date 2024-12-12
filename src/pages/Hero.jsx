@@ -1,13 +1,11 @@
 // Hero.js
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import downArrow from '../assets/icons/arrow-down.svg';
-import profilePic from '../assets/images/mukesh-yadav-pr-pic.webp';
 
 const Hero = () => {
 
-  const resumePdfbl = '/src/assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf';
-  const resumePdfbw = '/src/assets/resume/mukeshyadav-frontend-dev-resume-bw.pdf';
+  const resumePdfbl = './resume/mukeshyadav-frontend-dev-resume-bl.pdf';
+  const resumePdfbw = './resume/mukeshyadav-frontend-dev-resume-bw.pdf';
 
   const [resumeLink, setResumeLink] = useState(resumePdfbl);
 
@@ -51,7 +49,8 @@ const Hero = () => {
               </NavLink>
 
               <button id="dropdown-button" className="relative group">
-                <img src={downArrow} alt="arrow-down"
+                <img src="./icons/arrow-down.svg"
+                  alt="arrow-down"
                   className="rounded-r-md bg-brandDark-800 px-2 py-3 h-full border-s-2 border-brandDark-700 hover:bg-brandBlue-500" />
 
                 <div id="resume-colors"
@@ -80,7 +79,7 @@ const Hero = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-brandBlue-500 via-pink-500 to-brandBlue-600 rounded-full animate-spin animate-gradient-xy"></div>
               <div className="relative bg-white dark:bg-brandDark-950 rounded-full p-1.5">
                 <img
-                  src={profilePic}
+                  src="./images/mukesh-yadav-pr-pic.webp"
                   alt="Profile"
                   className="max-h-64 rounded-full transform hover:scale-105 hover:rotate-12 transition-transform duration-500"
                 />

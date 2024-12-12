@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
 
 const Projects = () => {
   const [selectedTab, setSelectedTab] = useState('all');
@@ -20,7 +21,7 @@ const Projects = () => {
       title: "Modern Portfolio",
       description: "Personal portfolio website built with React and Tailwind CSS",
       category: "web",
-      image: "src/assets/images/projectImage/technosavvys-web.png",
+      image: "./images/projectImage/personal-portfolio.png",
       link: "https://www.mukeshyadav.info"
     },
     {
@@ -28,16 +29,16 @@ const Projects = () => {
       title: "Ormat Todolist Web App",
       description: "Full-stack Todolist Web App with React, Tailwind CSS, Node.js and MongoDB",
       category: "web",
-      image: "src/assets/images/projectImage/todoList.png",
+      image: "./images/projectImage/ormat-todolist.png",
       link: "https://todo-list-seven-bay-50.vercel.app/"
     },
     {
       id: 3,
-      title: "Mobile Banking App",
-      description: "React Native mobile app for digital banking",
-      category: "mobile",
-      image: "/banking.jpg",
-      link: "https://banking.example.com"
+      title: "Reusify UI Library",
+      description: "Reusify UI Library is a React UI library that provides a set of reusable components for building modern web applications.",
+      category: "web",
+      image: "./images/projectImage/reusify-ui.png",
+      link: "https://reusify-ui.vercel.app/"
     }
   ];
 
@@ -218,53 +219,60 @@ const Projects = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="bg-white dark:bg-brandDark-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-brandDark-800"
+              className="h-fit bg-white dark:bg-brandDark-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-brandDark-800"
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-semibold text-brandDark-800 dark:text-brandDark-100">
                     {project.title}
                   </h3>
-                  <button className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
-                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
-                  </button>
+                  <NavLink to="https://github.com/dopemukesh" className='flex items-center justify-center border-4 border-brandDark-200 rounded-full'>
+                    <img
+                      className="w-8 h-8 rounded-full"
+                      src="./images/mukesh-yadav-pr-pic.webp"
+                      alt="Contributor"
+                    />
+                  </NavLink>
                 </div>
 
                 <p className="text-sm text-brandDark-600 dark:text-brandDark-400 mb-4">
                   {project.description}
                 </p>
 
-                <div className="relative h-40 mb-4 rounded-xl overflow-hidden bg-brandDark-200 dark:bg-brandDark-800 border dark:border-brandDark-700 grid place-content-center">
+                <div className="relative mb-4 rounded-xl overflow-hidden bg-brandDark-200 dark:bg-brandDark-800 border dark:border-brandDark-700 grid place-content-center" style={{ aspectRatio: '16 / 9' }}>
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover mt-6"
+                    className="w-full h-full object-cover"
                   />
                 </div>
 
                 <div className="flex items-center justify-between">
                   <div className="flex -space-x-2">
-                    <img
-                      className="w-8 h-8 rounded-full border-2 border-white dark:border-brandDark-900"
-                      src="https://via.placeholder.com/32"
-                      alt="Contributor"
-                    />
-                    <img
-                      className="w-8 h-8 rounded-full border-2 border-white dark:border-brandDark-900"
-                      src="https://via.placeholder.com/32"
-                      alt="Contributor"
-                    />
+                    {/* <div className="flex -space-x-2">
+                      <img
+                        className="w-8 h-8 rounded-full border-2 border-white dark:border-brandDark-900"
+                        src="https://via.placeholder.com/32"
+                        alt="Contributor"
+                      />
+                      <img
+                        className="w-8 h-8 rounded-full border-2 border-white dark:border-brandDark-900"
+                        src="https://via.placeholder.com/32"
+                        alt="Contributor"
+                      />
+                    </div> */}
+                    <button
+                      className="mt-4 px-4 py-2 bg-brandBlue-500 text-white rounded-md hover:bg-brandBlue-600 transition-all"
+                      onClick={() => window.open(project.link, '_blank')}
+                    >
+                      View Project
+                    </button>
                   </div>
                   <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
                     <button
                       className={`flex items-center hover:text-gray-700 dark:hover:text-gray-300 ${likes[project.id] ? 'text-blue-500' : ''}`}
                       onClick={() => handleLike(project.id)}
                     >
-                      {/* <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
-                      </svg> */}
                       {likes[project.id] ?
                         <svg className="w-5 h-5 mr-1 text-rose-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -273,7 +281,7 @@ const Projects = () => {
                         <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg>
-                        }
+                      }
                     </button>
                     <button
                       className="flex items-center hover:text-gray-700 dark:hover:text-gray-300"
