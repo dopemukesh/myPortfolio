@@ -4,8 +4,13 @@ import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
 
+<<<<<<< HEAD
   const resumePdfbl = './resume/mukeshyadav-frontend-dev-resume-bl.pdf';
   const resumePdfbw = './resume/mukeshyadav-frontend-dev-resume-bw.pdf';
+=======
+  const resumePdfbl = '../assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf';
+  const resumePdfbw = '../assets/resume/mukeshyadav-frontend-dev-resume-bw.pdf';
+>>>>>>> 8f9ea411614ae427527ca67a5a432cfc4bdbe6b1
 
   const [resumeLink, setResumeLink] = useState(resumePdfbl);
 
