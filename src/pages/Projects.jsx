@@ -226,7 +226,7 @@ const Projects = () => {
                   <h3 className="text-lg font-semibold text-brandDark-800 dark:text-brandDark-100">
                     {project.title}
                   </h3>
-                  <NavLink to="https://github.com/dopemukesh" className='flex items-center justify-center border-4 border-brandDark-200 rounded-full'>
+                  <NavLink to="https://github.com/dopemukesh" className='flex items-center justify-center border-4 border-brandDark-200 dark:border-brandDark-700/50 rounded-full'>
                     <img
                       className="w-8 h-8 rounded-full"
                       src="./images/mukesh-yadav-pr-pic.webp"
