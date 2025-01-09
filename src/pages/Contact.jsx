@@ -1,7 +1,31 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, email, message } = formData;
+
+    const mailtoLink = `mailto:dope.mukeshyadav@gmail.com?subject=Message from ${name}&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+
+    window.location.href = mailtoLink; // Opens Gmail with the details
+  };
+
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-brandDark-100 to-white dark:from-brandDark-900 dark:to-brandDark-950 px-4 md:px-16">
       <div className="container max-w-6xl mx-auto py-16">
@@ -42,10 +66,13 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="space-y-6 bg-white dark:bg-brandDark-800 p-8 rounded-2xl shadow-xl shadow-brandDark-200/20 dark:shadow-black/20">
+          <form onSubmit={handleSubmit} className="space-y-6 bg-white dark:bg-brandDark-800 p-8 rounded-2xl shadow-xl shadow-brandDark-200/20 dark:shadow-black/20">
             <div>
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Your Name"
                 className="w-full px-4 py-3 rounded-lg bg-brandDark-100/50 dark:bg-brandDark-900/50 border border-brandDark-200 dark:border-brandDark-700 focus:border-brandBlue-500 outline-none transition-all text-brandDark-800 dark:text-brandDark-100"
               />
@@ -53,6 +80,9 @@ const Contact = () => {
             <div>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Your Email"
                 required
                 className="w-full px-4 py-3 rounded-lg bg-brandDark-100/50 dark:bg-brandDark-900/50 border border-brandDark-200 dark:border-brandDark-700 focus:border-brandBlue-500 outline-none transition-all text-brandDark-800 dark:text-brandDark-100"
@@ -60,12 +90,18 @@ const Contact = () => {
             </div>
             <div>
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Your Message"
                 rows="4"
                 className="w-full px-4 py-3 rounded-lg bg-brandDark-100/50 dark:bg-brandDark-900/50 border border-brandDark-200 dark:border-brandDark-700 focus:border-brandBlue-500 outline-none transition-all text-brandDark-800 dark:text-brandDark-100"
               ></textarea>
             </div>
-            <button className="w-full py-4 px-6 rounded-lg bg-gradient-to-r from-brandBlue-500 to-brandBlue-600 text-white font-medium hover:shadow-lg hover:shadow-brandBlue-500/30 transition-all duration-300 transform hover:-translate-y-0.5">
+            <button
+              type="submit"
+              className="w-full py-4 px-6 rounded-lg bg-gradient-to-r from-brandBlue-500 to-brandBlue-600 text-white font-medium hover:shadow-lg hover:shadow-brandBlue-500/30 transition-all duration-300 transform hover:-translate-y-0.5"
+            >
               Send Message
             </button>
           </form>
