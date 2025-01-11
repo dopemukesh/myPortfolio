@@ -2,7 +2,7 @@
   "homepage": "https://dopemukesh.github.io/myPortfolio",
   "name": "portfolio-on-react",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.10",
   "type": "module",
   "scripts": {
     "dev": "vite",
