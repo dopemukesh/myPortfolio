@@ -18,7 +18,6 @@ const PdfList = () => {
                                     src={pdf.url}
                                     title={`PDF Preview: ${pdf.filename}`}
                                     className='border border-brandDark-300 dark:border-brandDark-700'>
-
                                 </iframe>
                             </div>
                             <div className='flex gap-4'>
