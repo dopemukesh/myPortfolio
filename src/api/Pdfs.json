@@ -1,0 +1,24 @@
+[
+    {
+        "id" : "1",
+        "filename": "mukeshyadav-frontend-dev-resume-bl.pdf",
+        "url": "src/assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf"
+    },
+    {
+        "id" : "2",
+        "filename": "mukeshyadav-frontend-dev-resume-bw.pdf",
+        "url": "src/assets/resume/mukeshyadav-frontend-dev-resume-bw.pdf"
+    },
+    {
+        "id" : "3",
+        "filename": "updatedTemplate01-frontendDev-resume-bl01.pdf",
+        "url": "./resume/updatedTemplate01-frontendDev-resume-bl01.pdf",
+        "type": "New"
+    },
+    {
+        "id" : "4",
+        "filename": "updatedTemplate02-frontendDev-resume-bl02.pdf",
+        "url": "./resume/updatedTemplate02-frontendDev-resume-bl02.pdf",
+        "type": "New"
+    }
+]

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import PdfList from './components/PdfList';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/pdflist" element={<PdfList />} />
         </Routes>
       </div>
       <Footer />
